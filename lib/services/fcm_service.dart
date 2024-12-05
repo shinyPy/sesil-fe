@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
+import 'package:sesil_fe/config.dart';
 
 class FirebaseMessagingService {
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
@@ -23,7 +24,7 @@ class FirebaseMessagingService {
     String? jwt = await _storage.read(key: 'jwt_token');
     if (jwt != null && token != null) {
       final response = await http.post(
-        Uri.parse('http://10.215.12.43:8000/api/fcm-token'),
+        Uri.parse('$apiBaseUrl/fcm-token'), // Use the base URL from config.dart
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $jwt', // Send the JWT for authentication
