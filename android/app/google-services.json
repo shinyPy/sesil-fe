@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "702804516995",
+    "project_id": "sesil-prototype",
+    "storage_bucket": "sesil-prototype.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702804516995:android:f4b39848c3cea666577bb6",
+        "android_client_info": {
+          "package_name": "com.example.sesil_fe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGLxrkHchfunZ6o0syNbLC2yYzGZQHzb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702804516995:android:fce497aa3b7f72ff577bb6",
+        "android_client_info": {
+          "package_name": "com.sesil.tja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGLxrkHchfunZ6o0syNbLC2yYzGZQHzb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
