@@ -34,6 +34,7 @@ class _FormDetailScreenState extends State<FormDetailScreen> {
                   _buildDetailRow('Description',
                       widget.form['description'] ?? 'No description'),
                   _buildDetailRow('Status', widget.form['status']),
+                                    _buildDetailRow('Rejection Note', widget.form['rejection_note'] ?? 'No rejection found'),
                   _buildDetailRow(
                     'User',
                     '${widget.form['user']['name']} (${widget.form['user']['email']})',
